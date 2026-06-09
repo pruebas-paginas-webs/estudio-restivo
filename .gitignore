@@ -1,0 +1,15 @@
+# Archivos de desarrollo / internos (no se publican)
+.agents/
+.claude/
+PRODUCT.md
+DESIGN.md
+
+# Fotos de oficina no usadas en el sitio (la 02 tiene el nombre que se quitó)
+assets/areas/01.jpg
+assets/areas/02.jpg
+assets/areas/05.jpg
+
+# Sistema
+Thumbs.db
+.DS_Store
+desktop.ini
