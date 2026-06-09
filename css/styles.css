@@ -582,9 +582,12 @@ ul { list-style: none; padding: 0; }
   object-fit: contain;
   filter: grayscale(1);
   opacity: .72;
-  transition: opacity .45s var(--ease), transform .45s var(--ease);
+  transition: filter .5s var(--ease), opacity .5s var(--ease), transform .45s var(--ease);
 }
-.marquee__item:hover img { opacity: 1; transform: scale(1.05); }
+/* Al frenar la cinta (hover) los logos pasan a color */
+.marquee:hover .marquee__item img { filter: grayscale(0); opacity: 1; }
+/* El logo justo bajo el cursor se agranda un poco */
+.marquee__item:hover img { transform: scale(1.05); }
 
 /* =====================================================================
    CONTACTO
