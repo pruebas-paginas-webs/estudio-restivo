@@ -584,10 +584,8 @@ ul { list-style: none; padding: 0; }
   opacity: .72;
   transition: filter .5s var(--ease), opacity .5s var(--ease), transform .45s var(--ease);
 }
-/* Al frenar la cinta (hover) los logos pasan a color */
-.marquee:hover .marquee__item img { filter: grayscale(0); opacity: 1; }
-/* El logo justo bajo el cursor se agranda un poco */
-.marquee__item:hover img { transform: scale(1.05); }
+/* Solo el logo bajo el cursor pasa a color y se agranda un poco */
+.marquee__item:hover img { filter: grayscale(0); opacity: 1; transform: scale(1.05); }
 
 /* =====================================================================
    CONTACTO
