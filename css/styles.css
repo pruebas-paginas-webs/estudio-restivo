@@ -503,7 +503,7 @@ ul { list-style: none; padding: 0; }
   justify-content: center;
   gap: 1.25rem;
 }
-.area-card { display: flex; flex: 1 1 180px; min-width: 160px; max-width: 320px; }
+.area-card { display: flex; flex: 1 1 210px; min-width: 200px; max-width: 340px; }
 
 .area-card .bezel__core { width: 100%; display: flex; flex-direction: column; }
 .area-card__core { transition: transform .3s var(--ease-out), box-shadow .3s var(--ease-out); }
@@ -543,6 +543,12 @@ ul { list-style: none; padding: 0; }
   letter-spacing: -.01em;
   margin-bottom: 0;
 }
+.area-card__desc {
+  margin-top: .65rem;
+  font-size: .92rem;
+  line-height: 1.55;
+  color: var(--ink-soft);
+}
 
 /* =====================================================================
    CLIENTES — infinite marquee
@@ -561,7 +567,8 @@ ul { list-style: none; padding: 0; }
   width: max-content;
   animation: marquee 50s linear infinite;
 }
-.marquee:hover .marquee__track { animation-play-state: paused; }
+.marquee:hover .marquee__track,
+.marquee:focus-within .marquee__track { animation-play-state: paused; }
 @keyframes marquee {
   from { transform: translateX(0); }
   to { transform: translateX(-50%); }

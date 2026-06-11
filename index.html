@@ -3,15 +3,39 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Estudio Restivo · Abogados</title>
-  <meta name="description" content="Estudio Restivo — abogados. Desde 1995, asesoramiento integral en transacciones comerciales complejas, a nivel nacional e internacional." />
+  <title>Estudio Restivo · Abogados — Buenos Aires</title>
+  <meta name="description" content="Estudio Restivo — abogados en Buenos Aires. Desde 1995, asesoramiento integral en transacciones comerciales complejas, a nivel nacional e internacional." />
   <meta name="theme-color" content="#F6F3EC" />
 
   <!-- Open Graph -->
   <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Estudio Restivo" />
   <meta property="og:title" content="Estudio Restivo · Abogados" />
   <meta property="og:description" content="Asesoramiento integral en transacciones comerciales complejas. Desde 1995." />
   <meta property="og:locale" content="es_AR" />
+  <!-- TODO (requiere dominio final confirmado): canonical, og:url y og:image con URL absoluta.
+       <link rel="canonical" href="https://DOMINIO/" />
+       <meta property="og:url" content="https://DOMINIO/" />
+       <meta property="og:image" content="https://DOMINIO/assets/og-image.jpg" /> -->
+
+  <!-- Datos estructurados (solo info confirmada en PRODUCT.md) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LegalService",
+    "name": "Estudio Restivo",
+    "alternateName": "Restivo & Asociados · Abogados",
+    "description": "Asesoramiento integral en transacciones comerciales complejas, a nivel nacional e internacional. Desde 1995.",
+    "foundingDate": "1995",
+    "telephone": "+54-11-4328-6762",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Buenos Aires",
+      "addressCountry": "AR"
+    },
+    "knowsAbout": ["Derecho societario", "Derecho laboral", "Derecho contractual", "Derecho comercial", "Derecho notarial"]
+  }
+  </script>
 
   <link rel="icon" type="image/png" href="assets/brand/restivo-logo.png" />
 
@@ -109,7 +133,7 @@
         <div class="hero__media reveal">
           <figure class="bezel hero__figure">
             <div class="bezel__core">
-              <img src="assets/areas/03.jpg" alt="Oficina del estudio con divisiones de vidrio, mobiliario de cuero y vista a la ciudad." loading="eager" width="1000" height="1000" />
+              <img src="assets/areas/03.jpg" alt="Oficina del estudio con divisiones de vidrio, mobiliario de cuero y vista a la ciudad." loading="eager" fetchpriority="high" width="1000" height="1000" />
               <div class="bezel__overlay" aria-hidden="true"></div>
             </div>
             <figcaption class="hero__badge">
@@ -125,6 +149,7 @@
     <section class="about section" id="quienes" aria-labelledby="about-title">
       <div class="container about__grid">
         <div class="about__head">
+          <span class="eyebrow reveal">El estudio</span>
           <h2 class="section__title reveal" id="about-title">Quiénes somos</h2>
           <figure class="bezel about__figure reveal">
             <div class="bezel__core">
@@ -179,6 +204,7 @@
     <section class="areas section" id="areas" aria-labelledby="areas-title">
       <div class="container">
         <div class="section__head section__head--center reveal">
+          <span class="eyebrow">Especialización</span>
           <h2 class="section__title" id="areas-title">Áreas de práctica</h2>
         </div>
 
@@ -191,6 +217,7 @@
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9 12 4l9 5M5 9.5V17m4-7.5V17m6-7.5V17m4-7.5V17M3.5 20.5h17M4 9.5h16"/></svg>
                 </span>
                 <h3 class="area-card__title">Societaria</h3>
+                <p class="area-card__desc">Constitución y reestructuración de sociedades, gobierno corporativo, M&amp;A y conflictos entre accionistas.</p>
               </div>
             </div>
           </article>
@@ -203,6 +230,7 @@
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3"/><path d="M3.5 19a5.5 5.5 0 0 1 11 0M16 5.2A3 3 0 0 1 17 11M15.6 14.2A5.5 5.5 0 0 1 20.5 19"/></svg>
                 </span>
                 <h3 class="area-card__title">Laboral</h3>
+                <p class="area-card__desc">Relaciones laborales individuales y colectivas, contratación, desvinculaciones y prevención de conflictos.</p>
               </div>
             </div>
           </article>
@@ -215,6 +243,7 @@
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3h7l4 4v14H7zM14 3v4h4M10 12.5h6M10 16.5h4"/></svg>
                 </span>
                 <h3 class="area-card__title">Contractual</h3>
+                <p class="area-card__desc">Redacción y negociación de contratos comerciales, civiles y de financiamiento.</p>
               </div>
             </div>
           </article>
@@ -227,6 +256,7 @@
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8h16v11H4zM9 8V6a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2M4 13h16M12 12.5v1.5"/></svg>
                 </span>
                 <h3 class="area-card__title">Comercial</h3>
+                <p class="area-card__desc">Asesoramiento comercial integral, transacciones, ofertas públicas y joint ventures.</p>
               </div>
             </div>
           </article>
@@ -239,6 +269,7 @@
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3.5a3 3 0 0 0-3 3c0 1.6 1 2.6 1 4H8.2A2.2 2.2 0 0 0 6 12.7v1.3h12v-1.3a2.2 2.2 0 0 0-2.2-2.2H14c0-1.4 1-2.4 1-4a3 3 0 0 0-3-3ZM5 20.5h14"/></svg>
                 </span>
                 <h3 class="area-card__title">Notarial</h3>
+                <p class="area-card__desc">Escrituras, poderes, actas y constitución de sociedades, a través de la Escribanía García Cortínez.</p>
               </div>
             </div>
           </article>
@@ -250,6 +281,7 @@
     <section class="clients section" id="clientes" aria-labelledby="clients-title">
       <div class="container">
         <div class="section__head section__head--center reveal">
+          <span class="eyebrow">Quienes confían en nosotros</span>
           <h2 class="section__title" id="clients-title">Clientes</h2>
         </div>
       </div>
@@ -286,6 +318,7 @@
     <section class="contact section" id="contacto" aria-labelledby="contact-title">
       <div class="container contact__grid">
         <div class="contact__intro">
+          <span class="eyebrow reveal">Consultas</span>
           <h2 class="section__title reveal" id="contact-title">Contacto</h2>
           <p class="contact__lead reveal">
             Contanos brevemente qué necesitás y te respondemos a la brevedad.
@@ -358,8 +391,9 @@
           <span>Estudio Restivo</span>
         </a>
         <p class="footer__blurb">
-          Abogados. Asesoramiento integral en transacciones comerciales
-          complejas desde 1995.
+          Restivo &amp; Asociados · Abogados. Asesoramiento integral en
+          transacciones comerciales complejas desde 1995, con
+          Escribanía García Cortínez asociada.
         </p>
       </div>
 
